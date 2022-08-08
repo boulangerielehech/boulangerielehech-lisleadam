@@ -1,0 +1,256 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    margin: 0 auto;
+    background: linear-gradient(to top right, #000000 1%, #cb2500 87%);
+}
+
+
+/* gestion de la top-page */
+
+
+/* logo */
+header.header img{
+    position: absolute;
+    box-shadow: 5px 5px 5px black;
+    width: 90px;
+    margin-top: 60px;
+    margin-left: 40px;
+    border-radius: 50%;
+    border: red;
+    transition: width 0.2s ease-in-out;
+
+}
+
+header.header img:hover{
+    width: 100px;
+}
+
+
+/* gestion du menu de navigation et animations */
+
+.gradient-bar-top{
+    background-color: black;
+    height: 1vh;
+}
+
+.gradient-bar-bottom{
+    background-color: white;
+    height: 10px;
+
+}
+
+.nav{
+    background: linear-gradient(to bottom, #000000 0%, #CB2500 120%);
+    height: 90px;
+    display:flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.nav li a{
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    font-family: 'Microsoft Uighur';
+    font-weight: 200;
+    text-transform: uppercase;
+    position:relative;
+    text-align: center;
+}
+
+.nav li a::before{
+    content:"";
+    background-color: #CF2323;
+    width: 100%;
+    height: 1px;
+    line-height: 100px;
+    position: absolute;
+    bottom: 0;
+    transform: scale(0);
+    transition: transform 0.4s ease-in-out;
+} 
+
+.nav li a:hover::before{
+    transform: scale(1);
+}
+
+/* gestion page d'acccueil */
+
+.main-image{
+    background-color: red;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-image: url('images/bg.jpg');
+
+}
+
+.big-title{
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    color: white;
+    font-size:  4em;
+    font-family: 'Abril FatFace';
+    font-weight: 100; 
+}
+
+/* bouton découvrir et animations */
+.button-box{
+    background-color: white;
+    margin-left: 90px;
+    width: 0px;
+    border-radius: 24px;
+    transform: translateY(-50px);
+    transition: width 0.5s ease-in-out;
+}
+
+
+
+.discover-button{
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: 'Abril FatFace';
+    margin-left: 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+.button-box:hover{
+    width: 180px;
+}
+
+.discover-button:hover{
+    color: black;
+} 
+
+/* Les classiques */
+
+.bar{
+    text-align: center;
+    color: white;
+    font-weight: 1000;
+    margin-top: 50px;
+}
+
+
+
+.style-bar{
+    background-color: white;
+    height: 30px;
+    width: 300px;
+    align-items: center;
+    margin-left: 25%;
+}
+
+.classic-title{
+    font-size: 90px;
+    font-family: 'Microsoft Uighur';
+    color: white;
+    font-weight: 100;
+    text-align: center;
+}
+
+        /* images des classiques */
+
+.classic-image-box{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+
+}
+
+.classic-image{
+    background-size: cover;
+    background-position: center;
+    height: 403px;
+    width: 302px;
+    border-radius: 14px;
+    margin-top: 50px;
+    transition: height 0.4s ease-in-out;
+}
+
+.classic-image:hover{
+    height: 473px;
+}
+
+
+.cl1{
+    background-image: url('images/nos-classiques/1.jpeg');    
+}
+
+.cl2{
+    background-image: url('images/nos-classiques/2.jpg');
+}
+
+.cl3{
+    background-image: url('images/nos-classiques/3.jpg');
+}
+
+
+
+/* DETAILS DES IMAGES TXT ETC... */
+
+.classic-details{
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    border-radius: 25px;
+}
+
+.classic-name{
+    color: white;
+    margin-top: 120%;
+    text-align: center;
+    font-size: 33px;
+    font-family: 'Microsoft Uighur';
+    color: white;
+    font-weight: 100;
+}
+
+.titre{
+    font-size: 150px;
+    margin-top: 150px;
+}
+
+
+/* SECTION nos patisseries */
+
+        /* SLIDER */
+
+.slider{
+    margin-top: 40px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.slides{
+    display:flex;
+    gap: 40px;
+    margin-left: 20px;    
+    margin-right: 20px;
+}
+
+.slide img{
+    height: 300px;
+    width: 300px;
+    border-radius: 30px;
+    margin-top: 35px;
+}
+
+.slide-name{
+    color: white;
+    text-align: center;
+}
+
+
+
