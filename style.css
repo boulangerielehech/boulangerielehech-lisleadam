@@ -152,9 +152,10 @@ header.header img:hover{
 }
 
 .classic-title{
-    font-size: 90px;
+    font-size: 70px;
     font-family: 'Microsoft Uighur';
     color: white;
+    overflow:hidden;
     font-weight: 100;
     text-align: center;
 }
