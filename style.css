@@ -57,7 +57,7 @@ header.header img:hover{
 
 .nav li a{
     color: white;
-    font-size: 20px;
+    font-size: 1.3em;
     text-decoration: none;
     font-family: 'Microsoft Uighur';
     font-weight: 200;
@@ -153,7 +153,7 @@ header.header img:hover{
 }
 
 .classic-title{
-    font-size: 70px;
+    font-size: 5em;
     font-family: 'Microsoft Uighur';
     color: white;
     overflow: hidden;
@@ -255,4 +255,28 @@ header.header img:hover{
 }
 
 
+/* RESPONSIVE */
 
+@media screen and (max-width:1024px){
+    .nav li a{
+        font-size: 1em;
+    }
+
+    .classic-title{
+        font-size: 3.3em;
+    }
+
+}
+
+@media screen and (max-width:300px){
+    .nav li a{
+        font-size: 0.6em;
+    }
+
+    .classic-title{
+        font-size: 3.3em;
+    }
+
+    
+
+}
