@@ -98,8 +98,9 @@ header.header img:hover{
     width: 100%;
     text-align: center;
     position: absolute;
+    top: 200px;
     color: white;
-    font-size:  2em;
+    font-size:  4em;
     font-family: 'Abril FatFace';
     font-weight: 100; 
 }
@@ -266,11 +267,15 @@ header.header img:hover{
         font-size: 3.3em;
     }
 
+    .big-title{
+        font-size: 2em;
+    }
+
 }
 
-@media screen and (max-width:300px){
+@media screen and (max-width:330px){
     .nav li a{
-        font-size: 0.6em;
+        font-size: 0.8em;   
     }
 
     .classic-title{
