@@ -1,20 +1,22 @@
 
+/* scroll fluide */
 html{
     scroll-behavior: smooth;
 }
 
-
+/* reglages generaux du body */
 body{
     margin: 0 auto;
     background: linear-gradient(to top right, #000000 1%, #cb2500 87%);
+    /* overflow sur axe y interdit */
     overflow-x:hidden;
 }
 
 
-/* gestion de la top-page */
+/* SECTION 1 TOP PAGE */
 
 
-/* logo */
+/* gestion dulogo */
 header.header img{
     position: absolute;
     box-shadow: 5px 5px 5px black;
@@ -26,14 +28,13 @@ header.header img{
     transition: width 0.2s ease-in-out;
 
 }
-
+/* animation hover du logo */
 header.header img:hover{
     width: 100px;
 }
 
 
 /* gestion du menu de navigation et animations */
-
 .gradient-bar-top{
     background-color: black;
     height: 1vh;
@@ -82,8 +83,10 @@ header.header img:hover{
     transform: scale(1);
 }
 
+
 /* gestion page d'acccueil */
 
+/* grande image page accueil */
 .main-image{
     background-color: red;
     min-height: 500px;
@@ -93,6 +96,7 @@ header.header img:hover{
 
 }
 
+/* grand titre boulangerie page d'accueil */
 .big-title{
     background-color: rgba(0,0,0,0.4);
     width: 100%;
@@ -105,7 +109,7 @@ header.header img:hover{
     font-weight: 100; 
 }
 
-/* bouton découvrir et animations */
+/* bouton nous contacter et animations */
 .button-box{
     background-color: white;
     margin-left: 90px;
@@ -115,44 +119,40 @@ header.header img:hover{
     transition: width 0.5s ease-in-out;
 }
 
-
-
-.discover-button{
+.contact-button{
     color: white;
+    align-items: center;
+    position: relative;
+    text-align: center;
     font-size: 30px;
+    margin-left:20px;
+    display: flex;
+    width: 250px;
     text-decoration: none;
     font-family: 'Abril FatFace';
-    margin-left: 20px;
     transition: color 0.3s ease-in-out;
 }
 
 .button-box:hover{
-    width: 180px;
+    width: 250px;
 }
 
-.discover-button:hover{
+.contact-button:hover{
     color: black;
 } 
-
 /* Les classiques */
 
-.bar{
+/* barre séparatrice */
+.barre-sep{
     text-align: center;
     color: white;
     font-weight: 1000;
     margin-top: 50px;
 }
 
+/* SECTION 2 */
 
-
-.style-bar{
-    background-color: white;
-    height: 30px;
-    width: 300px;
-    align-items: center;
-    margin-left: 25%;
-}
-
+/* gros titre nos classiques */
 .classic-title{
     font-size: 5em;
     font-family: 'Microsoft Uighur';
@@ -162,9 +162,10 @@ header.header img:hover{
     text-align: center;
 }
 
-        /* images des classiques */
+/* images des classiques */
 
-.classic-image-box{
+
+.classic-image-box{   /* box div image classique */
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -173,7 +174,7 @@ header.header img:hover{
 
 }
 
-.classic-image{
+.classic-image{ /* boite image classique*/
     background-size: cover;
     background-position: center;
     height: 403px;
@@ -183,11 +184,12 @@ header.header img:hover{
     transition: height 0.4s ease-in-out;
 }
 
-.classic-image:hover{
+.classic-image:hover{ /*anim hover image classique*/
     height: 473px;
 }
 
 
+/* fichiers src des images classiques */
 .cl1{
     background-image: url('images/nos-classiques/1.jpeg');    
 }
@@ -202,14 +204,15 @@ header.header img:hover{
 
 
 
-/* DETAILS DES IMAGES TXT ETC... */
+/* DETAILS DES IMAGES CLASSIQUES TXT ETC... */
 
+/* div generale details */
 .classic-details{
     background: rgba(0,0,0,0.7);
     width: 100%;
     border-radius: 25px;
 }
-
+/* nom du classique */
 .classic-name{
     color: white;
     margin-top: 120%;
@@ -220,16 +223,11 @@ header.header img:hover{
     font-weight: 100;
 }
 
-.titre{
-    font-size: 150px;
-    margin-top: 150px;
-}
-
 
 /* SECTION nos patisseries */
 
         /* SLIDERS */
-    /* titre entre chaque slider */
+/* titre entre chaque slider */
 .titre-partie-patisserie{
     text-align: center;
     font-size: 50px;
@@ -241,19 +239,27 @@ header.header img:hover{
     line-height: 40px;
 
 }
-
+/* soulignement partiel du titre en chaque part */
 .titre-partie-patisserie::before{
     content: " ";
+    font-family: 'Abril FatFace';
     width: 50px;
     height: 4px;
     background-color: red;
+    border-radius: 10px;
     position: absolute;
     bottom: 0;
     line-height: 1px;
 }
 
 
-        /* SLIDERS */
+
+/*  SECTION 3 NOS PATISSERIES*/
+
+
+    /* sliders */
+
+/* premiere ligne de slider tarte feuille */
 .slider-tf{
     /* background-color: green; */
     height: fit-content;
@@ -261,7 +267,7 @@ header.header img:hover{
     overflow-x: auto;
     overflow-y: hidden;
 }
-
+/* deuxieme ligne de slider tarte sablees */
 .slider-ts{
     /* background-color: blue; */
     height: fit-content;
@@ -269,7 +275,7 @@ header.header img:hover{
     overflow-x: auto;
     overflow-y: hidden;
 }
-
+/* troisieme ligne de slider des gateaux */
 .slider-g{
     /* background-color: violet; */
     height: fit-content;
@@ -277,14 +283,24 @@ header.header img:hover{
     overflow-x: auto;
     overflow-y: hidden;
 }
-    /* SLIDES */
+/* quatrieme ligne de slider gateaux individuels */
+.slider-gi{
+    /* background-color: violet; */
+    height: fit-content;
+    margin-top: 40px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+    /* slides */
+
+/* premiere ligne de slides tartes feuilletées */
 .slides-tf{
     display:flex;
     gap: 40px;
     margin-left: 20px;    
     margin-right: 20px;
 }
-
+/* deuxieme ligne de slides tarte sablees */
 .slides-ts{
     display:flex;
     flex-direction: row;
@@ -292,7 +308,7 @@ header.header img:hover{
     margin-left: 20px;    
     margin-right: 20px;
 }
-
+/* troisieme ligne de slides des gateaux */
 .slides-g{
     display:flex;
     flex-direction: row;
@@ -300,8 +316,16 @@ header.header img:hover{
     margin-left: 20px;    
     margin-right: 20px;
 }  
+/* quatrieme ligne de slides gateaux individuels */
+.slides-gi{
+    display:flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-left: 20px;    
+    margin-right: 20px;
+}  
 
-        /* PARAMETRE DE L'IMAGE DU SLIDER */
+        /* PARAMETRE UNIQUE DE L'IMAGE DU SLIDER */
 .slide-patisseries img{
     height: 300px;
     width: 300px;
@@ -314,34 +338,81 @@ header.header img:hover{
 /* RESPONSIVE */
 
 @media screen and (max-width:1024px){
+    /* menu navigation  */
     .nav li a{
         font-size: 1em;
+        color: black;
     }
-
+    /* passage du menu de navigation en mode bouton */
+    .li-bg{
+        background-color: white;
+        width:100px;
+        border-radius: 14px;
+        position: relative;
+        text-align: center;
+    }
+    /* ajustement de la taille des titres de chaque section du site */
     .classic-title{
         font-size: 3.3em;
     }
-
+    /* ajustement du titre principal de la page */
     .big-title{
         font-size: 2em;
     }
-
+    /* ajustement des images des slides de patisseries */
     .slide-patisseries img{
         height: 200px;
         width: 200px;
     }
+    /* ajustement de la taille du titre entre chaque parties des patisseries */
+    .titre-partie-patisserie{
+        font-size: 30px;
+    }
+    /* ajustement de la taille des images de nos classiques */
+    .classic-image{
+        height: 303px;
+        width: 202px;
+    }
+    /* ajustement de l'animation des images de nos classiques */
+    .classic-image:hover{
+        height: 373px;
+    }
+
 
 }
 
+        /* responsive pour très petit écran (fold, Iphone4 etc..) */
 @media screen and (max-width:330px){
-    .nav li a{
-        font-size: 0.8em;   
-    }
 
+    /* menu navigation  */
+    .nav li a{
+        font-size: 0.9em;   
+        color: black;
+    }
+    /* passage du menu de navigation en mode bouton */
+    .li-bg{
+        background-color: white;
+        width:70px;
+        border-radius: 10px;
+        position: relative;
+        text-align: center;
+    }
+    /* ajustement de la taille du logo */
+    header.header img{
+        width: 70px;
+        margin-top: 80px;
+    }
+    /* ajustement des images des slides de patisseries */
+    .slide-patisseries img{
+        height: 100px;
+        width: 100px;
+    }
+    /* ajustement de la taille des titres de chaque section du site */
     .classic-title{
         font-size: 3.3em;
     }
-
-    
-
+    /* ajustement de la taille du titre entre chaque parties des patisseries */
+    .titre-partie-patisserie{
+        font-size: 30px;
+    }
 }

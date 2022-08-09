@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Boulangerie Le Hec'h</title>
+    <title>Boulangerie Le Hec'h - Grande rue L'Isle Adam</title>
 
+    <!-- cacher scroll-bar et/ou la personnalisée -->
     <style>
+        /* personnalisation de la scroll bar */
         ::-webkit-scrollbar{
             width: 5px;
             display:none;
@@ -22,6 +24,8 @@
             background-color: black;
         }
 
+
+        /* cacher la scroll bar */
         ::-webkit-scrollbar-thumb:hover{
             background-color: grey;
         }
@@ -31,66 +35,70 @@
 </head>
 <body>
 
-
+    <!-- SECTION 1 // top de la page (logo, main_image, menu de navigation)-->
     <section class="top-page">
         <header class="header">
-            <img src="images/logo.png" alt="">
+            <img src="images/logo.png" alt=""> <!--importation du logo --> 
+
+            <!-- menu de navigation -->
             <nav class="nav">
-                <li><a href="#nos-classiques">Nos classiques</a></li>
-                <li><a href="images/pdf.pdf">Commander</a></li>
-                <li><a href="">Nous contacter</a></li>
+                <div class="li-bg li1"><li><a href="#nos-classiques">Nos classiques</a></li></div>
+                <div class="li-bg li2"><li><a href="images/pdf.pdf">Commander</a></li></div>
+                <div class="li-bg li3"><li><a href="">Nous contacter</a></li></div>
             </nav>  
         </header>
 
+        <!-- barre noire au dessus image-->
         <div class="gradient-bar-top"></div>
-            <div class="main-image">
-                <h1 class="big-title">Boulangerie Le Hec'h</h1>
+            <div class="main-image"> <!-- image principale-->
+                <h1 class="big-title">Boulangerie Le Hec'h</h2>
             </div>
-            <div class="button-box">
-                <a href="#nos-patisseries" class="discover-button" >Nos patisseries</a>  
+            <div class="button-box"><!-- bouton nous contacter-->
+                <a href="" class="contact-button" >Nous contacter</a>  
             </div>
         <div class="gradient-bar-bottom"></div>
             
     </section>  
 
-    <section class="breads">
-        <!-- <div class="style-bar"></div> -->
 
-        <h1 class="bar">_______________________</h1>
-        <h1 class="classic-title" id="nos-classiques">Nos classiques</h1>
-        <h1 class="bar">_______________________</h1>
+    <!--SECTION 2 // partie interactive à la une , les classiques-->
+    <section class="interactive-part">
+        <h2 class="barre-sep">_______________________</h2> <!-- barre séparatrice -->
+        <!-- Titre nos classiques -->
+        <h2 class="classic-title" id="nos-classiques">Nos classiques</h2>
+        <h2 class="barre-sep">_______________________</h2> <!-- barre séparatrice -->
+        <!-- div pour box des images de nos classiques -->
         <div class="classic-image-box">
             <div class="classic-image cl1">
                 <div class="classic-details">
-                    <p class="classic-name">Le traditionnel</p>
+                    <p class="classic-name">Le traditionnel</p> <!--  Nom de l'image classique -->
                 </div>
             </div>
             <div class="classic-image cl2">
                 <div class="classic-details">
-                    <p class="classic-name">Le fait maison</p>
+                    <p class="classic-name">Le fait maison</p><!--  Nom de l'image classique -->
                 </div>            </div>
             <div class="classic-image cl3">
                 <div class="classic-details">
-                    <p class="classic-name">Le flan 'maison'</p>
+                    <p class="classic-name">Le flan 'maison'</p><!--  Nom de l'image classique -->
                 </div>            
             </div>
         </div>
     </section>
 
-    <!-- section nos patisseries -->
 
+    <!-- SECTION 3 // nos patisseries -->
     <section class="patisseries">
-        <!--  titre nos patisseries -->
-        <h1 class="bar">_______________________</h1>
-        <h1 class="classic-title" id="nos-classiques">Nos patisseries</h1>
-        <h1 class="bar">_______________________</h1>
+        <!--  titre nos patisseries + barres séparatrices-->
+        <h2 class="barre-sep">_______________________</h2>
+        <h2 class="classic-title" id="nos-classiques">Nos patisseries</h2>
+        <h2 class="barre-sep">_______________________</h2>
         
         
-        <!--sliders nos patisseries -->
-        
+        <!-- titre rubrique-->
+        <h3 class="titre-partie-patisserie" id="nos-patisseries">Nos tartes feuilletées 🥮</h3>
 
-        <h3 class="titre-partie-patisserie" id="nos-patisseries">Nos tartes feuilletées</h3>
-        <!-- slider tarte feuilleté -->
+        <!-- slider tarte feuilletée -->
         <div class="slider-tf" ">
             <div class="slides-tf slides-patisserie">
                 <div class="slide-tf slide-patisseries"><img src="images/patisseries/0.jpg" ></div>
@@ -102,7 +110,8 @@
             </div>
         </div>
 
-        <h3 class="titre-partie-patisserie">Nos tartes sablées</h3>
+        <h3 class="titre-partie-patisserie">Nos tartes sablées 🥮</h3>
+
         <!-- slider tarte sablée -->
         <div class="slider-ts">
             <div class="slides-ts slides-patisserie">
@@ -115,7 +124,8 @@
             </div>
         </div>
 
-        <h3 class="titre-partie-patisserie">Nos gateaux</h3>
+        <h3 class="titre-partie-patisserie">Nos gateaux 🍰</h3>
+
         <!-- slider nos gateaux -->
         <div class="slider-g">
             <div class="slides-g slides-patisserie">
@@ -128,26 +138,31 @@
             </div>
         </div>
 
-        
+        <h3 class="titre-partie-patisserie">Nos gateaux individuels 🧁</h3>
 
-
-
-
-
-
-
-
-
-
-
-            
+        <!-- slider nos gateaux individuels -->
+        <div class="slider-gi">
+            <div class="slides-gi slides-patisserie">
+                <div class="slide-gi slide-patisseries"><img src="images/patisseries/0.jpg" ></div>
+                <div class="slide-gi slide-patisseries"><img src="images/patisseries/1.jpg" ></div>
+                <div class="slide-gi slide-patisseries"><img src="images/patisseries/0.jpg" ></div>
+                <div class="slide-gi slide-patisseries"><img src="images/patisseries/3.jpg" ></div>
+                <div class="slide-gi slide-patisseries"><img src="images/patisseries/4.jpg" ></div>
+                <div class="slide-gi slide-patisseries"><img src="images/patisseries/4.jpg" ></div>
+            </div>
         </div>
-        <h1 class="bar">______________________</h1>
+        <h2 class="barre-sep">______________________</h2>     <!-- barre séparatrice-->
+
+    </section>
+
+    <!-- SECTION 4 // nos pains -->
+    <section class="pain">
 
 
 
 
 
+        
     </section>
     
 </body>
