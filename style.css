@@ -19,25 +19,22 @@ body{
     width: 100%;
     height: 100%;
     background: #000;
-    display: flex; 
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    overflow: hidden;
-    display:flex;
-    gap: 100px;
 }
 
 .loader img{
-    position:absolute;
+    margin-top: 100px;
     height: 200px;
     width: 300px;
 }
 
 .texte-loader{
+    position: absolute;
+    line-height: 500px;
     font-size: 40px;
-    line-height: 100px;
     color: white;
-    text-align: center;
 }
 
 .fondu-out {
@@ -152,7 +149,7 @@ header.header img:hover{
     top: 200px;
     color: white;
     font-size:  4em;
-    font-family: 'Abril FatFace';
+    font-family: 'Abril FatFace', cursive;
     font-weight: 100; 
     animation: fadein 4s;
     -moz-animation: fadein 4s; /* Firefox */
@@ -181,7 +178,7 @@ header.header img:hover{
     display: flex;
     width: 250px;
     text-decoration: none;
-    font-family: 'Abril FatFace';
+    font-family: 'Abril FatFace' , cursive;
     transition: color 0.3s ease-in-out;
     -moz-animation: fadein 4s; /* Firefox */
     -webkit-animation: fadein 4s; /* Safari et Chrome */
@@ -298,7 +295,7 @@ header.header img:hover{
 /* soulignement partiel du titre en chaque part */
 .titre-partie-patisserie::before{
     content: " ";
-    font-family: 'Abril FatFace';
+    font-family: 'Abril FatFace' cursive;
     width: 50px;
     height: 4px;
     background-color: red;
@@ -432,6 +429,11 @@ header.header img:hover{
     /* ajustement de l'animation des images de nos classiques */
     .classic-image:hover{
         height: 373px;
+    }
+    /* ajustement de la taille du logo */
+    header.header img{
+        width: 70px;
+        margin-top: 50px;
     }
 }
 
