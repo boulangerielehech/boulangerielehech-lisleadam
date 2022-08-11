@@ -25,16 +25,10 @@ body{
 }
 
 .loader img{
-    margin-top: 100px;
-    height: 200px;
-    width: 300px;
-}
-
-.texte-loader{
     position: absolute;
-    line-height: 500px;
-    font-size: 40px;
-    color: white;
+    bottom: 0;
+    height: 300px;
+    width: 300px;
 }
 
 .fondu-out {
@@ -99,9 +93,9 @@ header.header img:hover{
 
 .nav li a{
     color: white;
-    font-size: 1.3em;
+    font-size: 1.1em;
     text-decoration: none;
-    font-family: 'Microsoft Uighur';
+    font-family: 'Forum';
     font-weight: 200;
     text-transform: uppercase;
     position:relative;
@@ -207,8 +201,8 @@ header.header img:hover{
 
 /* gros titre nos classiques */
 .classic-title{
-    font-size: 5em;
-    font-family: 'Microsoft Uighur';
+    font-size: 4em;
+    font-family: 'Forum';
     color: white;
     overflow: hidden;
     font-weight: 100;
@@ -271,7 +265,7 @@ header.header img:hover{
     margin-top: 120%;
     text-align: center;
     font-size: 33px;
-    font-family: 'Microsoft Uighur';
+    font-family: 'Forum';
     color: white;
     font-weight: 100;
 }
@@ -283,8 +277,8 @@ header.header img:hover{
 /* titre entre chaque slider */
 .titre-partie-patisserie{
     text-align: center;
-    font-size: 50px;
-    font-family: 'Microsoft Uighur';
+    font-size: 40px;
+    font-family: 'Forum';
     font-weight: 200;
     color: white;
     margin-top: 50px;
@@ -422,19 +416,24 @@ header.header img:hover{
         font-size: 30px;
     }
     /* ajustement de la taille des images de nos classiques */
-    .classic-image{
+    /* .classic-image{
         height: 303px;
         width: 202px;
-    }
+    } */
     /* ajustement de l'animation des images de nos classiques */
     .classic-image:hover{
-        height: 373px;
+        height: 473px;
     }
     /* ajustement de la taille du logo */
     header.header img{
-        width: 70px;
-        margin-top: 50px;
+        display:none;
     }
+    /* on désactive le bouton contact en mode téléphone */
+    .contact-button{
+        display:none;
+    }
+
+
 }
 
 /* responsive pour très petit écran (fold, Iphone4 etc..) */
@@ -442,26 +441,25 @@ header.header img:hover{
 
     /* menu navigation  */
     .nav li a{
-        font-size: 0.9em;   
+        font-size: 0.7em;   
         color: black;
     }
     /* passage du menu de navigation en mode bouton */
     .li-bg{
         background-color: white;
-        width:70px;
+        width:75px;
         border-radius: 10px;
         position: relative;
         text-align: center;
     }
     /* ajustement de la taille du logo */
     header.header img{
-        width: 70px;
-        margin-top: 100px;
+        display:none;
     }
     /* ajustement des images des slides de patisseries */
     .slide-patisseries img{
-        height: 100px;
-        width: 100px;
+        height: 150px;
+        width: 150px;
     }
     /* ajustement de la taille des titres de chaque section du site */
     .classic-title{
@@ -469,7 +467,7 @@ header.header img:hover{
     }
     /* ajustement de la taille du titre entre chaque parties des patisseries */
     .titre-partie-patisserie{
-        font-size: 30px;
+        font-size: 20px;
     }
 
     /* ajustement de la taille de classic name */
@@ -479,5 +477,15 @@ header.header img:hover{
         text-align: center;
         font-size: 15px;
     }
+    /* on désactive le bouton contact en mode téléphone */
+    .contact-button{
+        display:none;
+    }
+    /* ajustement de la taille des images de nos classiques */
+    .classic-image{
+        height: 303px;
+        width: 202px;
+    } 
+    
 
 }
