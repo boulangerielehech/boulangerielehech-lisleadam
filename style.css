@@ -1,4 +1,3 @@
-
 /* scroll fluide */
 html{
     scroll-behavior: smooth;
@@ -22,13 +21,15 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index:99;
 }
 
 .loader img{
     position: absolute;
-    bottom: 0;
+    bottom: 200px;
     height: 300px;
     width: 300px;
+
 }
 
 .fondu-out {
@@ -60,7 +61,7 @@ header.header img{
     -moz-animation: fadein 4s; /* Firefox */
     -webkit-animation: fadein 4s; /* Safari et Chrome */
     -o-animation: fadein 4s; /* Opera */
-    
+
 
 }
 /* animation hover du logo */
@@ -115,7 +116,7 @@ header.header img:hover{
     bottom: 0;
     transform: scale(0);
     transition: transform 0.4s ease-in-out;
-} 
+}
 
 .nav li a:hover::before{
     transform: scale(1);
@@ -144,7 +145,7 @@ header.header img:hover{
     color: white;
     font-size:  4em;
     font-family: 'Abril FatFace', cursive;
-    font-weight: 100; 
+    font-weight: 100;
     animation: fadein 4s;
     -moz-animation: fadein 4s; /* Firefox */
     -webkit-animation: fadein 4s; /* Safari et Chrome */
@@ -177,7 +178,7 @@ header.header img:hover{
     -moz-animation: fadein 4s; /* Firefox */
     -webkit-animation: fadein 4s; /* Safari et Chrome */
     -o-animation: fadein 4s; /* Opera */
-    
+
 }
 
 .button-box:hover{
@@ -186,7 +187,7 @@ header.header img:hover{
 
 .contact-button:hover{
     color: black;
-} 
+}
 /* Les classiques */
 
 /* barre séparatrice */
@@ -238,7 +239,7 @@ header.header img:hover{
 
 /* fichiers src des images classiques */
 .cl1{
-    background-image: url('images/nos-classiques/1.jpeg');    
+    background-image: url('images/nos-classiques/1.jpeg');
 }
 
 .cl2{
@@ -275,7 +276,7 @@ header.header img:hover{
 
         /* SLIDERS */
 /* titre entre chaque slider */
-.titre-partie-patisserie{
+.titre-partie-pain{
     text-align: center;
     font-size: 40px;
     font-family: 'Forum';
@@ -287,7 +288,7 @@ header.header img:hover{
 
 }
 /* soulignement partiel du titre en chaque part */
-.titre-partie-patisserie::before{
+.titre-partie-pain::before{
     content: " ";
     font-family: 'Abril FatFace' cursive;
     width: 50px;
@@ -301,13 +302,13 @@ header.header img:hover{
 
 
 
-/*  SECTION 3 NOS PATISSERIES*/
+/*  SECTION 3 NOS PAINS*/
 
 
     /* sliders */
 
 /* premiere ligne de slider tarte feuille */
-.slider-tf{
+.slider-1{
     /* background-color: green; */
     height: fit-content;
     margin-top: 40px;
@@ -315,7 +316,7 @@ header.header img:hover{
     overflow-y: hidden;
 }
 /* deuxieme ligne de slider tarte sablees */
-.slider-ts{
+.slider-2{
     /* background-color: blue; */
     height: fit-content;
     margin-top: 40px;
@@ -323,7 +324,7 @@ header.header img:hover{
     overflow-y: hidden;
 }
 /* troisieme ligne de slider des gateaux */
-.slider-g{
+.slider-3{
     /* background-color: violet; */
     height: fit-content;
     margin-top: 40px;
@@ -331,7 +332,7 @@ header.header img:hover{
     overflow-y: hidden;
 }
 /* quatrieme ligne de slider gateaux individuels */
-.slider-gi{
+.slider-4{
     /* background-color: violet; */
     height: fit-content;
     margin-top: 40px;
@@ -341,39 +342,39 @@ header.header img:hover{
     /* slides */
 
 /* premiere ligne de slides tartes feuilletées */
-.slides-tf{
+.slides-1{
     display:flex;
     gap: 40px;
-    margin-left: 20px;    
+    margin-left: 20px;
     margin-right: 20px;
 }
 /* deuxieme ligne de slides tarte sablees */
-.slides-ts{
+.slides-2{
     display:flex;
     flex-direction: row;
     gap: 40px;
-    margin-left: 20px;    
+    margin-left: 20px;
     margin-right: 20px;
 }
 /* troisieme ligne de slides des gateaux */
-.slides-g{
+.slides-3{
     display:flex;
     flex-direction: row;
     gap: 40px;
-    margin-left: 20px;    
+    margin-left: 20px;
     margin-right: 20px;
-}  
+}
 /* quatrieme ligne de slides gateaux individuels */
-.slides-gi{
+.slides-4{
     display:flex;
     flex-direction: row;
     gap: 40px;
-    margin-left: 20px;    
+    margin-left: 20px;
     margin-right: 20px;
-}  
+}
 
         /* PARAMETRE UNIQUE DE L'IMAGE DU SLIDER */
-.slide-patisseries img{
+.slide-pain img{
     height: 300px;
     width: 300px;
     border-radius: 30px;
@@ -407,12 +408,12 @@ header.header img:hover{
         font-size: 2em;
     }
     /* ajustement des images des slides de patisseries */
-    .slide-patisseries img{
+    .slide-pain img{
         height: 200px;
         width: 200px;
     }
     /* ajustement de la taille du titre entre chaque parties des patisseries */
-    .titre-partie-patisserie{
+    .titre-partie-pain{
         font-size: 30px;
     }
     /* ajustement de la taille des images de nos classiques */
@@ -441,7 +442,7 @@ header.header img:hover{
 
     /* menu navigation  */
     .nav li a{
-        font-size: 0.7em;   
+        font-size: 0.7em;
         color: black;
     }
     /* passage du menu de navigation en mode bouton */
@@ -457,7 +458,7 @@ header.header img:hover{
         display:none;
     }
     /* ajustement des images des slides de patisseries */
-    .slide-patisseries img{
+    .slide-pain img{
         height: 150px;
         width: 150px;
     }
@@ -466,7 +467,7 @@ header.header img:hover{
         font-size: 3.3em;
     }
     /* ajustement de la taille du titre entre chaque parties des patisseries */
-    .titre-partie-patisserie{
+    .titre-partie-pain{
         font-size: 20px;
     }
 
@@ -485,7 +486,7 @@ header.header img:hover{
     .classic-image{
         height: 303px;
         width: 202px;
-    } 
-    
+    }
+
 
 }

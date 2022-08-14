@@ -7,6 +7,7 @@
     <link rel="icon" href="images/logo-ongletV3F.png">
     <title>Boulangerie Le Hec'h - Grande rue L'Isle Adam</title>
 
+    <meta http-equiv="Page-Exit" content="revealTrans(Duration=2.0,Transition=23)">
     <!-- cacher scroll-bar et/ou la personnalisée -->
     <style>
         /* importation des polices */
@@ -23,7 +24,7 @@
             box-shadow: inset 0 0 10px rgba(0,0,0,0.25);
         }
 
-        ::-webkit-scrollbar-thumb{  
+        ::-webkit-scrollbar-thumb{
             border-radius: 5px;
             background-color: black;
         }
@@ -41,21 +42,21 @@
 
 
     <!-- chargement animation -->
-    <div class="loader">
+    <div class="loader" id="loader">
         <img src="images/loading.png" alt="">
     </div>
 
     <!-- SECTION 1 // top de la page (logo, main_image, menu de navigation)-->
     <section class="top-page">
         <header class="header">
-            <img src="images/logo.png" alt=""> <!--importation du logo --> 
+            <img src="images/logo.png" alt=""> <!--importation du logo -->
 
             <!-- menu de navigation -->
             <nav class="nav">
-                <div class="li-bg li1"><li><a href="#nos-classiques">Nos classiques</a></li></div>
-                <div class="li-bg li2"><li><a href="images/pdf.pdf">Commander</a></li></div>
+                <div class="li-bg li1"><li><a href="index2.html">Nos patisseries</a></li></div>
+                <div class="li-bg li2"><li><a href="#nos-pains">Nos pains</a></li></div>
                 <div class="li-bg li3"><li><a href="">Nous contacter</a></li></div>
-            </nav>  
+            </nav>
         </header>
 
         <!-- barre noire au dessus image-->
@@ -64,11 +65,11 @@
                 <h1 class="big-title">Boulangerie Le Hec'h <br>L'Isle Adam</h1>
             </div>
             <div class="button-box"><!-- bouton nous contacter-->
-                <a href="" class="contact-button" >Nous contacter</a>  
+                <a href="" class="contact-button" >Nous contacter</a>
             </div>
         <div class="gradient-bar-bottom"></div>
-            
-    </section>  
+
+    </section>
 
 
     <!--SECTION 2 // partie interactive à la une , les classiques-->
@@ -91,81 +92,80 @@
             <div class="classic-image cl3">
                 <div class="classic-details">
                     <p class="classic-name">Le flan maison</p><!--  Nom de l'image classique -->
-                </div>            
+                </div>
             </div>
         </div>
     </section>
 
 
-    <!-- SECTION 3 // nos patisseries -->
-    <section class="patisseries">
+    <!-- SECTION 3 // nos pains -->
+    <section class="pains">
         <!--  titre nos patisseries + barres séparatrices-->
         <h2 class="barre-sep">_____________________</h2>
-        <h2 class="classic-title" id="nos-classiques">Nos patisseries</h2>
-        <h2 class="barre-sep">_____________________</h2>
-        
-        
+        <h2 class="classic-title" id="nos-pains">Nos pains</h2>
+        <h2 class="barre-sep" id="nos-pains">_____________________</h2>
+
+
         <!-- titre rubrique-->
-        <h3 class="titre-partie-patisserie" id="nos-patisseries">Nos tartes feuilletées 🥮</h3>
+        <h3 class="titre-partie-pain" id="nos-pains">pain</h3>
 
         <!-- slider tarte feuilletée -->
-        <div class="slider-tf" ">
-            <div class="slides-tf slides-patisserie">
-                <div class="slide-tf slide-patisseries"><img src="images/patisseries/0.jpg" ></div>
-                <div class="slide-tf slide-patisseries"><img src="images/patisseries/1.jpg" ></div>
-                <div class="slide-tf slide-patisseries"><img src="images/patisseries/0.jpg" ></div>
-                <div class="slide-tf slide-patisseries"><img src="images/patisseries/3.jpg" ></div>
-                <div class="slide-tf slide-patisseries"><img src="images/patisseries/4.jpg" ></div>
-                <div class="slide-tf slide-patisseries"><img src="images/patisseries/4.jpg" ></div>
+        <div class="slider-1" ">
+            <div class="slides-1 slides-patisserie">
+                <div class="slide-1 slide-pain"><img src="images/pains/pain.png" ></div>
+                <div class="slide-1 slide-pain"><img src="images/pains/pain.png" ></div>
+                <div class="slide-1 slide-pain"><img src="images/pains/pain.png" ></div>
+                <div class="slide-1 slide-pain"><img src="images/pains/pain.png" ></div>
+                <div class="slide-1 slide-pain"><img src="images/pains/pain.png" ></div>
+                <div class="slide-1 slide-pain"><img src="images/pains/pain.png" ></div>
             </div>
         </div>
 
-        <h3 class="titre-partie-patisserie">Nos tartes sablées 🥮</h3>
+        <h3 class="titre-partie-pain">pain</h3>
 
         <!-- slider tarte sablée -->
-        <div class="slider-ts">
-            <div class="slides-ts slides-patisserie">
-                <div class="slide-ts slide-patisseries"><img src="images/patisseries/0.jpg" ></div>
-                <div class="slide-ts slide-patisseries"><img src="images/patisseries/1.jpg" ></div>
-                <div class="slide-ts slide-patisseries"><img src="images/patisseries/0.jpg" ></div>
-                <div class="slide-ts slide-patisseries"><img src="images/patisseries/3.jpg" ></div>
-                <div class="slide-ts slide-patisseries"><img src="images/patisseries/4.jpg" ></div>
-                <div class="slide-ts slide-patisseries"><img src="images/patisseries/4.jpg" ></div>
+        <div class="slider-2">
+            <div class="slides-2 slides-patisserie">
+                <div class="slide-2 slide-pain"><img src="images/pains/pain.png" ></div>
+                <div class="slide-2 slide-pain"><img src="images/pains/pain.png" ></div>
+                <div class="slide-2 slide-pain"><img src="images/pains/pain.png" ></div>
+                <div class="slide-2 slide-pain"><img src="images/pains/pain.png" ></div>
+                <div class="slide-2 slide-pain"><img src="images/pains/pain.png" ></div>
+                <div class="slide-2 slide-pain"><img src="images/pains/pain.png" ></div>
             </div>
         </div>
 
-        <h3 class="titre-partie-patisserie">Nos gateaux 🍰</h3>
+        <h3 class="titre-partie-pain">pain</h3>
 
         <!-- slider nos gateaux -->
-        <div class="slider-g">
-            <div class="slides-g slides-patisserie">
-                <div class="slide-g slide-patisseries"><img src="images/patisseries/0.jpg" ></div>
-                <div class="slide-g slide-patisseries"><img src="images/patisseries/1.jpg" ></div>
-                <div class="slide-g slide-patisseries"><img src="images/patisseries/0.jpg" ></div>
-                <div class="slide-g slide-patisseries"><img src="images/patisseries/3.jpg" ></div>
-                <div class="slide-g slide-patisseries"><img src="images/patisseries/4.jpg" ></div>
-                <div class="slide-g slide-patisseries"><img src="images/patisseries/4.jpg" ></div>
+        <div class="slider-3">
+            <div class="slides-3 slides-patisserie">
+                <div class="slide-3 slide-pain"><img src="images/pains/pain.png" ></div>
+                <div class="slide-3 slide-pain"><img src="images/pains/pain.png" ></div>
+                <div class="slide-3 slide-pain"><img src="images/pains/pain.png" ></div>
+                <div class="slide-3 slide-pain"><img src="images/pains/pain.png" ></div>
+                <div class="slide-3 slide-pain"><img src="images/pains/pain.png" ></div>
+                <div class="slide-3 slide-pain"><img src="images/pains/pain.png" ></div>
             </div>
         </div>
 
-        <h3 class="titre-partie-patisserie">Nos gateaux individuels 🧁</h3>
+        <h3 class="titre-partie-pain">pain</h3>
 
         <!-- slider nos gateaux individuels -->
-        <div class="slider-gi">
-            <div class="slides-gi slides-patisserie">
-                <div class="slide-gi slide-patisseries"><img src="images/patisseries/0.jpg" ></div>
-                <div class="slide-gi slide-patisseries"><img src="images/patisseries/1.jpg" ></div>
-                <div class="slide-gi slide-patisseries"><img src="images/patisseries/0.jpg" ></div>
-                <div class="slide-gi slide-patisseries"><img src="images/patisseries/3.jpg" ></div>
-                <div class="slide-gi slide-patisseries"><img src="images/patisseries/4.jpg" ></div>
-                <div class="slide-gi slide-patisseries"><img src="images/patisseries/4.jpg" ></div>
+        <div class="slider-4">
+            <div class="slides-4 slides-patisserie">
+                <div class="slide-4 slide-pain"><img src="images/pains/pain.png" ></div>
+                <div class="slide-4 slide-pain"><img src="images/pains/pain.png" ></div>
+                <div class="slide-4 slide-pain"><img src="images/pains/pain.png" ></div>
+                <div class="slide-4 slide-pain"><img src="images/pains/pain.png" ></div>
+                <div class="slide-4 slide-pain"><img src="images/pains/pain.png" ></div>
+                <div class="slide-4 slide-pain"><img src="images/pains/pain.png" ></div>
             </div>
         </div>
         <h2 class="barre-sep">______________________</h2>     <!-- barre séparatrice-->
 
     </section>
 
-    <!-- SECTION 4 // nos pains -->
 
     <script src="app.js"></script>
 </body>

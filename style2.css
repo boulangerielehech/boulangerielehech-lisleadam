@@ -1,0 +1,75 @@
+
+
+@keyframes transitionIn{
+from {
+    opacity: 0;
+    transform: rotateX(-100deg);
+}
+
+to{
+    opacity: 1;
+    transform: rotateX(0);
+}
+}
+
+body{
+    margin: 0 auto;
+    /* petits reglages */
+    animation: transitionIn 1.5s;
+    font-family: 'Forum';
+    background-color: #cb2500;
+}
+
+/* barre de navigation */
+.nav{
+    background-color: white;
+    border-radius: 24px;
+    list-style: none;   
+    display:flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav.nav li a {
+    font-family: 'Forum';
+    font-size: 1em;
+    color: black;
+    text-decoration: none;
+}
+
+/* main title */
+.main-title{
+    font-weight: 500;
+    text-align: center;
+    font-size: 4em;
+}
+
+/* gestion de la grille */
+.grille{
+    max-width: 1300px;
+    width: 80%;
+    height: auto;
+    margin: 30px auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 300px);
+}
+
+.grid-item{
+    width: 300px;
+    height: 200px;
+    background-color: #333;
+    border-radius: 15px;
+} 
+
+.test{
+font-size: 20px;
+margin-top: 500px;
+}
