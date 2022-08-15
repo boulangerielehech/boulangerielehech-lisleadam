@@ -8,35 +8,79 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
     </style>
+
 </head>
 <body>
+    <div class="loader" id="loader">
+        <img src="images/loading.png" alt="">
+    </div>
+
     <section class="top-page">
         
         <header class="header">
             <h1 class="main-title">Nos patisseries</h1>
+            <h2 class="accueil-txt"><a href="index.html" >Retour</a></h2>
+            <div class="logo-box">
+                <p>Le Hec'h</p>
+            </div>
 
-            <nav class="nav">
-                <li> <a href="#">guette le gato</a></li>
-                <li> <a href="#">Nos gato super bons</a></li>
-                <li> <a href="#">Nos gato wsh bete de gato</a></li>
-                <li> <a href="#">Nos gato c'est pas possible </a></li>
-            </nav>
+            <!-- auto caroussel -->
+            <div class="main-box">
+                <div class="card-part cp1"></div>
+                <div class="card-part cp2"></div>
+                <div class="card-part cp3"></div>
+                <div class="card-part cp4"></div>
+            </div>
+
+            <div class="box-txt2">
+                <p>Chez Le Hec'h, nous faisons nos patisseries avec
+                    du beurre et de l'amour que nous vous vendons.
+                    Je sais pas ce que je raconte mais fallait remplir.
+                </p>
+            </div>
         </header>
 
-        <!-- creation de la grille -->
+        <!-- menu de navigation mode pc -->
+        <nav class="nav-pc">
+            <li> <a href="#">les tartes feuilletées</a></li>
+            <li> <a href="#">les tartes sablées</a></li>
+            <li> <a href="#">Les gâteaux</a></li>
+            <li> <a href="#">Les gâteaux individuels</a></li>
+        </nav>
+        <!-- menu de navigation mode telephone -->
+        <nav class="nav-phone">
+            <li> <a href="#">1</a></li>
+            <li> <a href="#">2</a></li>
+            <li> <a href="#">3</a></li>
+            <li> <a href="#">4</a></li>
+        </nav>
+
+        <!-- creation de la grille 1 -->
+        <h2 class="barre-sep">__________________________</h2> <!-- barre séparatrice -->
+        <h2 class="grid-title grid-title1">Nos tartes feuilletées</h2>
         <div class="grille">
             <a class="grid-item grid1"></a>
-            <a class="grid-item "></a>
-            <a class="grid-item "></a>
-            <a class="grid-item "></a>
-
-
+            <a class="grid-item grid1"></a>
+            <a class="grid-item grid1"></a>
+            <a class="grid-item grid1"></a>
         </div>
+
+        <!-- creation de la grille 2 -->
+        <h2 class="grid-title">Nos tartes sablées</h2>
+
+        <div class="grille">
+            <a class="grid-item grid2"></a>
+            <a class="grid-item grid2"></a>
+            <a class="grid-item grid2"></a>
+            <a class="grid-item grid2"></a>
+        </div>
+
 
         <h2 class="test">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore porro maxime incidunt, esse placeat eveniet cupiditate! Similique et at qui ipsa molestias sequi doloremque accusantium quo. Et omnis quisquam cum!</h2>
     </section>
 
-    
+    <script src="app2.js"></script>
 </body>
 </html>

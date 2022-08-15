@@ -12,42 +12,224 @@ to{
 }
 }
 
+/* html et body */
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0 auto;
     /* petits reglages */
-    animation: transitionIn 1.5s;
     font-family: 'Forum';
-    background-color: #cb2500;
+    background: linear-gradient(to top right, #000000 1%, #cb2500 87%);
+    height: fit-content;
 }
 
-/* barre de navigation */
-.nav{
-    background-color: white;
-    border-radius: 24px;
-    list-style: none;   
-    display:flex;
-    flex-direction: row;
-    position: fixed;
-    bottom: 10px;
+/* LOADER */
+.loader {
+    position: absolute;
     width: 100%;
-    height: 50px;
+    height: 100%;
+    background: #000;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    z-index:99;
 }
 
-.nav.nav li a {
-    font-family: 'Forum';
-    font-size: 1em;
-    color: black;
-    text-decoration: none;
+.loader img{
+    position: absolute;
+    bottom: 200px;
+    height: 300px;
+    width: 300px;
+
 }
+
+.fondu-out {
+    opacity: 0;
+    transition: opacity 0.4s ease-out;
+}
+
+/* HEADER */
+
 
 /* main title */
 .main-title{
+    background-color: white;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    color:black;
+    margin-top: 5px;
+    border-radius: 25px;
     font-weight: 500;
     text-align: center;
     font-size: 4em;
 }
+
+.accueil-txt{
+    align-items: center;
+    position: absolute;
+    margin-left: 20px;
+
+}
+
+.accueil-txt a{
+    text-transform: none;
+    text-decoration: none;
+    color:white;
+    font-weight: 100;
+
+}
+
+/* logo  */
+.logo-box{
+    border-radius: 50%;
+    border:solid;
+    border-width: 0.1em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px;
+    height: 100px;
+    width: 200px;
+}
+
+.logo-box p{
+    font-family: 'MonteCarlo', cursive;
+    text-align: center;
+    font-size: 50px;
+    position:relative;
+    margin-top: 0px;
+    right:8px;
+}
+
+/* carroussel automatique */
+.main-box{
+    margin-top: 40px;
+    position: relative;
+    width: 700px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
+    overflow:hidden;
+    box-shadow: 10px 25px 30px;
+}
+
+.card-part{
+    align-items: center;
+    position:absolute;
+    width:100%;
+    height: 100%;
+    top:0;
+    left:0;        
+    z-index: 7;
+    background-image: url('images/patisseries/1.jpg');
+    border-radius: 50px;
+    background-size: cover;
+    background-position: center;
+    animation: slider 28s ease-in-out
+    infinite ;
+    transform: translateX(700px);
+}
+
+.cp2{
+    background-image: url('images/patisseries/2.jpg');
+    animation-delay: 7s;
+    z-index: 6;
+}
+
+.cp3{
+    background-image: url('images/patisseries/3.jpg');
+    animation-delay: 14s;
+    z-index: 5;
+}
+
+.cp4{
+    background-image: url('images/patisseries/4.jpg');
+    animation-delay: 21s;
+    z-index: 4;
+}
+
+/* animation caroussel */
+@keyframes slider {
+    3%{
+        transform: translateX(0px);
+    }
+    25%{
+        transform: translateX(0px);
+    }
+    28%{
+        transform: translateX(-700px);
+    }
+    100%{
+        transform: translateX(-700px);
+    }
+}
+
+/* TEXTE LEHECH */
+.box-txt2{
+    width: 400px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box-txt2 p{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+
+}
+
+
+/* barre de navigation */
+.nav-pc{
+    background-color: white;
+    border-radius: 40px;
+    display:flex;
+    position: fixed;
+    bottom: 10px;
+    height: 50px;
+    align-items: center;
+    list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    left: 10%;
+    right: 10%;
+    z-index: 10;
+    
+}
+
+.nav-pc li a {
+    font-family: 'Forum';
+    font-size: 1em;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav-phone{
+    display: none;
+    background-color: white;
+    position: fixed;
+    bottom: 10px;
+    width:100%;
+    height: 50px;
+    align-items: center;
+    list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-phone li a {
+    display:none;
+
+}
+
+
 
 /* gestion de la grille */
 .grille{
@@ -69,7 +251,118 @@ body{
     border-radius: 15px;
 } 
 
-.test{
-font-size: 20px;
-margin-top: 500px;
+.grid-title{
+    text-align: center;
+    font-family: 'Forum', cursive;
+    color:white;
+    font-size: 60px;
+    font-weight: 100;
 }
+
+.grid-title1{
+    margin-top: 100px;
+}
+
+.barre-sep{
+    color:white;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.test{
+    font-size: 20px;
+    margin-top: 500px;
+}
+
+
+/* RESPONSIVE */
+@media screen and (max-width:1024px){
+    /* agrandissement de la barre de navigation */
+    /* .nav-pc{
+        height: 140px;
+        border-radius: 50px;
+        width: 80%;
+        left: 10%;
+        right: 10%;
+    }        */
+
+    /* on enleve la  nav pc */
+    .nav-pc{
+        display:none
+    }
+    .nav-pc li a {
+        display:none;
+    }   
+
+    /* on met la nav phone */
+    .nav-phone{
+        display:flex;
+        height: 130px;
+        border-radius: 50px;
+        width: 80%;
+        left: 10%;
+        right: 10%;
+    }
+    .nav-phone li a{
+        display:flex;
+        font-family: 'Forum';
+        font-size: 60px;
+        color: black;
+        text-decoration: none;
+    }
+
+    /* maintitle */
+    .main-title{
+        font-size: 100px;
+        border-radius: 50px;
+        margin-top: 20px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+    }
+    /* grid */
+
+    .grille{
+        grid-template-columns: repeat(2, 400px);
+    }
+    .grid-item{
+        width: 400px;
+        height: 300px;
+        border-radius: 30px;
+    }
+    /* text box image debut */
+
+    .box-txt{
+        width: 800px;
+        height: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        background: url('images/patisseries/patissier.jpg');
+        background-size: cover;
+        background-position: center;
+        border-radius: 50px;
+    }
+
+    /* text lehech */
+    .box-txt2{
+        margin-top: 100px;
+        width: 700px;
+        height: fit-content;
+    }
+    .box-txt2 p{
+        font-size: 50px;
+    }
+
+    .barre-sep{
+        margin-top: 100px;
+    }
+
+    /* gestion du logo */
+    .logo-box{
+
+        margin-top: -6  0px;
+    }
+
+}
+
