@@ -210,16 +210,19 @@ body{
     left: 10%;
     right: 10%;
     z-index: 10;
+    text-align: center;
+    gap: 10px;
     
 }
 
 .nav-pc li a {
     font-family: 'Forum';
-    font-size: 1em;
+    font-size: 1.3em;
     color: black;
     text-decoration: none;
     text-transform: uppercase;
     position: relative;
+    
 }
 
 /* effet soulignement barre navigation */
@@ -336,16 +339,8 @@ body{
 
 
 /* RESPONSIVE */
-@media screen and (max-width:1024px){
-    /* agrandissement de la barre de navigation */
-    /* .nav-pc{
-        height: 140px;
-        border-radius: 50px;
-        width: 80%;
-        left: 10%;
-        right: 10%;
-    }        */
 
+@media screen and (max-width:760px){
     /* on enleve la  nav pc */
     .nav-pc{
         display:none
@@ -357,7 +352,7 @@ body{
     /* on met la nav phone */
     .nav-phone{
         display:flex;
-        height: 8em;
+        height: 3em;
         border-radius: 50px;
         bottom: 20px;
         width: 80%;
@@ -367,14 +362,14 @@ body{
     .nav-phone li a{
         display:flex;
         font-family: 'Forum';
-        font-size: 60px;
+        font-size: 30px;
         color: black;
         text-decoration: none;
     }
 
     /* maintitle */
     .main-title{
-        font-size: 100px;
+        font-size: 50px;
         border-radius: 50px;
         margin-top: 20px;
         width: 80%;
@@ -385,36 +380,20 @@ body{
     /* grid */
 
     .grille{
-        grid-template-columns: repeat(2, 400px);
+        grid-template-columns: repeat(2, 200px);
     }
     .grid-item{
-        width: 400px;
-        height: 300px;
+        width: 200px;
+        height: 100px;
         border-radius: 30px;
     }
 
+
    
-    /* ajustement du logo */
-    .logo-box{
-        border-width: 0.1em;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: -20px;
-        height: 150px;
-        width: 250px;
-    }
-    
-    .logo-box p{
-        font-family: 'MonteCarlo', cursive;
-        text-align: center;
-        font-size: 60px;
-        position:relative;
-        margin-top: 15px;
-        right:10px;
-    }
     /* ajustement taille slider téléphone */
     .main-box{
-        height: 500px;
+        height: 300px;
+        width: 500px;
     }
     /* text box image debut */
 
@@ -436,7 +415,7 @@ body{
         height: fit-content;
     }
     .box-txt2 p{
-        font-size: 50px;
+        font-size: 40px;
     }
 
     .barre-sep{
@@ -444,16 +423,28 @@ body{
     }
 
     /* gestion du logo */
+
     .logo-box{
-        margin-top:-50px;
+        margin-top: -10px;
+        height: 70px;
+        width: 120px;
+    }
+    
+    .logo-box p{
+        font-family: 'MonteCarlo', cursive;
+        text-align: center;
+        font-size: 30px;
+        position:relative;
+        margin-top: 9px;
+        right:7px;
     }
     /* retour à la page d'accueil bouton */
 
     .accueil-txt{
-        width: 150px;
+        width: 100px;
     }
     .accueil-txt a{
-        font-size: 1.5em;
+        font-size: 1em;
         color:black;
     }
 
