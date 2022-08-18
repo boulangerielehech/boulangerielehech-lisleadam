@@ -254,6 +254,8 @@ body{
     list-style: none;
     align-items: center;
     justify-content: space-evenly;
+    z-index: 10;
+
 }
 
 .nav-phone li a {
@@ -340,10 +342,10 @@ body{
 
 /* RESPONSIVE */
 
-@media screen and (max-width:760px){
+@media screen and (max-device-width:500px){
     /* on enleve la  nav pc */
     .nav-pc{
-        display:none
+        display:none;
     }
     .nav-pc li a {
         display:none;
@@ -352,7 +354,7 @@ body{
     /* on met la nav phone */
     .nav-phone{
         display:flex;
-        height: 3em;
+        height: 4em;
         border-radius: 50px;
         bottom: 20px;
         width: 80%;
@@ -362,14 +364,14 @@ body{
     .nav-phone li a{
         display:flex;
         font-family: 'Forum';
-        font-size: 30px;
+        font-size: 60px;
         color: black;
         text-decoration: none;
     }
 
     /* maintitle */
     .main-title{
-        font-size: 50px;
+        font-size: 80px;
         border-radius: 50px;
         margin-top: 20px;
         width: 80%;
@@ -426,17 +428,17 @@ body{
 
     .logo-box{
         margin-top: -10px;
-        height: 70px;
-        width: 120px;
+        height: 100px;
+        width: 150px;
     }
     
     .logo-box p{
         font-family: 'MonteCarlo', cursive;
         text-align: center;
-        font-size: 30px;
+        font-size: 35px;
         position:relative;
-        margin-top: 9px;
-        right:7px;
+        margin-top: 14px;
+        right:8px;
     }
     /* retour à la page d'accueil bouton */
 
@@ -448,5 +450,10 @@ body{
         color:black;
     }
 
-}
+    /* taille slider */
+    .main-box{
+        width: 800px;
+        height: 450px;
+    }
+}   
 
