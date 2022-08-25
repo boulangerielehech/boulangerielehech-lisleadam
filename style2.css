@@ -69,21 +69,24 @@ body{
 }
 
 .accueil-txt{
-    align-items: center;
     position: absolute;
+    align-items: center;
     margin-left: 20px;
     background-color: white;
     border-radius: 24px;
-    width: 100px;
+    width: 150px;
+    height: fit-content;
     text-align: center;
+
 }
 
 .accueil-txt a{
     color:black;
+    height: 50px;
     text-transform: none;
     text-decoration: none;
     font-weight: 100;
-
+    font-size: 30px;
 }
 
 /* logo  */
@@ -190,9 +193,7 @@ body{
     color: white;
     text-align: center;
     font-size: 40px;
-
 }
-
 
 /* barre de navigation */
 .nav-pc{
@@ -275,17 +276,28 @@ body{
     justify-content: center;
     align-items: center;
     grid-gap: 10px;
-    grid-template-columns: repeat(2, 300px);
+    grid-template-columns: repeat(2, 400px);
 }
 
 .grid-item{
-    width: 300px;
-    height: 200px;
+    width: 400px;
+    height: 300px;
     background-color: #333;
     border-radius: 15px;
     background-position: center;
     background-size: cover;
+    position: relative;
 } 
+
+.g_name{
+    background-color: white;
+    width: 100%;
+    color:black;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
 
 /* images premiere grid */
 .grid11{
@@ -341,7 +353,11 @@ body{
 
 
 /* RESPONSIVE */
+@media screen and (max-device-width:1024px){
+    /* pour pc  */
+}
 
+/* pour téléphone */
 @media screen and (max-device-width:500px){
     /* on enleve la  nav pc */
     .nav-pc{
@@ -382,16 +398,23 @@ body{
     /* grid */
 
     .grille{
-        grid-template-columns: repeat(2, 200px);
+        grid-template-columns: repeat(2, 400px);
+        gap: 20px;
     }
     .grid-item{
-        width: 200px;
-        height: 100px;
+        width: 400px;
+        height: 300px;
         border-radius: 30px;
+    }
+    .g_name{
+        background-color: white;
+        font-size: 34px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
     }
 
 
-   
     /* ajustement taille slider téléphone */
     .main-box{
         height: 300px;
@@ -417,7 +440,7 @@ body{
         height: fit-content;
     }
     .box-txt2 p{
-        font-size: 40px;
+        font-size: 60px;
     }
 
     .barre-sep{
@@ -427,26 +450,27 @@ body{
     /* gestion du logo */
 
     .logo-box{
-        margin-top: -10px;
-        height: 100px;
-        width: 150px;
+        margin-top: -15px;
+        height: 125px;
+        width: 200px;
     }
     
     .logo-box p{
         font-family: 'MonteCarlo', cursive;
         text-align: center;
-        font-size: 35px;
+        font-size: 50px;
         position:relative;
-        margin-top: 14px;
+        margin-top: 15px;
         right:8px;
     }
     /* retour à la page d'accueil bouton */
 
     .accueil-txt{
-        width: 100px;
-    }
+        width: 150px;
+        height: 40px;
+        }
     .accueil-txt a{
-        font-size: 1em;
+        font-size: 1.5em;
         color:black;
     }
 
@@ -455,5 +479,6 @@ body{
         width: 800px;
         height: 450px;
     }
+
 }   
 

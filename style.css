@@ -94,7 +94,7 @@ header.header img:hover{
 
 .nav li a{
     color: white;
-    font-size: 1.1em;
+    font-size: 1.3em;
     text-decoration: none;
     font-family: 'Forum';
     font-weight: 200;
@@ -381,8 +381,77 @@ header.header img:hover{
     margin-top: 35px;
 }
 
+/* SECTION 4 // NOUS CONTACTER */
+/* wave */
+.contact-div{
+    margin-top: 50px;
+    background-color: black;
+    width:90%;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    border-radius: 70px;
+    background: rgba(7, 7, 7, 0.8);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    border: 1px solid rgba(7, 7, 7, 0.3);
+    align-items: center;
+}
 
+.phone-number{
+    text-align: center;
+    color:white;
+    font-size: 30px;
+    font-family: 'Forum', cursive;
+}
 
+/* find us */
+.find_us{
+    text-align: center;
+    color:white;
+    font-size: 40px;
+    font-family: 'Forum', cursive;
+}
+
+.contact-images{
+    background-color: red;
+    height: auto;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image_contact{
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: auto;
+    align-items: center;
+} 
+
+.hours-title{
+    color:white;
+    font-size: 40px;
+    text-align: center;
+}
+.hours{
+    font-size: 20px;
+    color:white;
+    text-align: center;
+    list-style-type: none;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px
+}
+
+.hours li::first-letter{
+    text-transform: uppercase;
+    color:red;
+    font-size: 30px;
+}
 /* RESPONSIVE */
 
 @media screen and (max-width:1024px){
@@ -432,6 +501,11 @@ header.header img:hover{
     /* on désactive le bouton contact en mode téléphone */
     .contact-button{
         display:none;
+    }
+
+    /* wave */
+    .contact-div{
+        height: fit-content;
     }
 
 
@@ -487,6 +561,8 @@ header.header img:hover{
         height: 303px;
         width: 202px;
     }
+    
 
+    
 
 }
