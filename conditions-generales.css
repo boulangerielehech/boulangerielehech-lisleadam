@@ -1,6 +1,7 @@
 
 
 body{
+    margin:0 auto;
     background: linear-gradient(to top right, #000000 1%, #cb2500 87%);
 }
 
@@ -16,6 +17,16 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+
+/* button retour */
+
+.retour-btn{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
 /* nom du dev (hehe)*/
 .moi-div{
     text-align: center;
@@ -30,28 +41,29 @@ body{
     color:white;
     font-family: 'Forum';
     font-size: 35px;
-
+    text-decoration: underline;
+    margin-bottom: 100px;
 }
 
 .moi-p{
     text-align: center;
     font-family: 'Forum';
     color:white;
+    font-size: 30px;
 }
 
 /* gestion du slider */
 
 .slider{
-    margin-top: 40px;
+    margin-top: 200px;
     border-radius: 30px;
-    height: 1200px;
-    width: 80%;
+    height: 1400px;
+    width: 90%;
     background-color: blue;
     margin-left: auto;
     margin-right: auto;
     overflow-y: auto;
     margin-bottom: 50px;
-
 }
 
 .slide1{
@@ -62,6 +74,7 @@ body{
     margin-right: auto;
     background-image: url('images/politique/politique-1.png');
     background-size: cover;
+    background-position: center;
 }
 
 .slide2{
@@ -72,6 +85,8 @@ body{
     margin-right: auto;
     background-image: url('images/politique/politique-2.png');
     background-size: cover;
+    background-position: center;
+
 }
 
 .slide3{
@@ -82,8 +97,26 @@ body{
     margin-right: auto;
     background-image: url('images/politique/politique-3.png');
     background-size: cover;
+    background-position: center;
+
 }
 
+
+@media screen and (max-device-width:500px){
+    /* titre */
+    .main-title{
+        font-size: 70px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-device-width:1024px){
+    /* titre */
+    .main-title{
+        font-size: 50px;
+        width: 100%;
+    }
+}
 
 
 
