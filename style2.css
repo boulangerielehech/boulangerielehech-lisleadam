@@ -89,6 +89,29 @@ body{
     font-size: 30px;
 }
 
+    /* bouton menu de commandes */
+
+    .command-btn{
+        position: absolute;
+        align-items: center;
+        background-color: white;
+        border-radius: 24px;
+        width: 150px;
+        height: fit-content;
+        text-align: center;
+        right: 20px;
+    }
+
+    .command-btn a{
+        color:black;
+        height: 50px;
+        text-transform: none;
+        text-decoration: none;
+        font-weight: 100;
+        font-size: 30px;
+    }
+
+
 /* logo  */
 .logo-box{
     border-radius: 50%;
@@ -289,14 +312,25 @@ body{
     position: relative;
 } 
 
+.g-details{
+    background-color: #FFFFFFDF;
+    border-radius: 50px;
+    position:absolute;
+    bottom: 10px;
+    width: 60%;
+    height: 15%;
+    right:70px;
+    left:70px;
+}
+
 .g_name{
-    background-color: white;
-    width: 100%;
     color:black;
-    font-size: 30px;
-    margin-left: auto;
-    margin-right: auto;
+    text-transform: uppercase;
+    font-size: 20px;
     text-align: center;
+    margin-top: 12px;
+    user-select: none;
+    cursor:pointer;
 }
 
 /* images premiere grid */
@@ -398,20 +432,29 @@ body{
     /* grid */
 
     .grille{
-        grid-template-columns: repeat(2, 400px);
+        grid-template-columns: repeat(2, 450px);
         gap: 20px;
     }
     .grid-item{
-        width: 400px;
-        height: 300px;
+        width: 450px;
+        height: 350px;
         border-radius: 30px;
     }
     .g_name{
-        background-color: white;
-        font-size: 34px;
-        margin-left: auto;
-        margin-right: auto;
+        color:black;
+        text-transform: uppercase;
+        font-size: 25px;
         text-align: center;
+        margin-top: 12px;
+        user-select: none;
+        cursor:pointer;
+    }
+    .grid-title{
+        text-align: center;
+        font-family: 'Forum', cursive;
+        color:white;
+        font-size: 70px;
+        font-weight: 100;
     }
 
 
@@ -468,12 +511,15 @@ body{
     .accueil-txt{
         width: 150px;
         height: 40px;
-        }
+    }
+
     .accueil-txt a{
         font-size: 1.5em;
         color:black;
     }
 
+
+    /*  */
     /* taille slider */
     .main-box{
         width: 800px;
@@ -482,3 +528,21 @@ body{
 
 }   
 
+
+/* pied de page */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 100px;
+    font-weight: 600;
+    color:white;
+    margin-bottom: 100px    ;
+}
+
+footer a.cgv {
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+}
