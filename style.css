@@ -316,7 +316,6 @@ header.header img:hover{
     height: fit-content;
     margin-top: 40px;
     overflow-x: auto;
-    overflow-y: hidden;
 }
 /* deuxieme ligne de slider tarte sablees */
 .slider-2{
