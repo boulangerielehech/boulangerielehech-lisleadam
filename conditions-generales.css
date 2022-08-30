@@ -32,6 +32,7 @@ body{
 
 .btn{
     text-decoration: none;
+    color:black;
 }
 
 
@@ -65,24 +66,23 @@ body{
 .slider{
     margin-top: 200px;
     border-radius: 30px;
-    height: 1400px;
+    height: 1000px;
     width: 90%;
-    background-color: blue;
     margin-left: auto;
     margin-right: auto;
     overflow-y: auto;
+    overflow-x:visible;
     margin-bottom: 50px;
 }
 
 .slide1{
-    background-color: red;
     width: 100%;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
     background-image: url('images/politique/politique-1.png');
-    background-size: cover;
-    background-position: center;
+    background-size:cover;
+
 }
 
 .slide2{
@@ -92,8 +92,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     background-image: url('images/politique/politique-2.png');
-    background-size: cover;
-    background-position: center;
+    background-size:cover;
 
 }
 
@@ -104,8 +103,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     background-image: url('images/politique/politique-3.png');
-    background-size: cover;
-    background-position: center;
+    background-size:COVER;
 
 }
 
@@ -139,6 +137,40 @@ body{
     .btn{
         text-decoration: none;
         font-size: 40px;
+    }
+}
+
+@media screen and (min-device-width: 800px){
+    .slide1{
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url('images/politique/politique-1.png');
+        background-size:cover;
+    
+    }
+    
+    .slide2{
+        background-color: red;
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url('images/politique/politique-2.png');
+        background-size:cover;
+    
+    }
+    
+    .slide3{
+        background-color: red;
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url('images/politique/politique-3.png');
+        background-size:cover;
+    
     }
 }
 

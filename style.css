@@ -73,7 +73,7 @@ header.header img:hover{
 
 /* gestion du menu de navigation et animations */
 .gradient-bar-top{
-    background-color: black;
+    background-color: white;
     height: 1vh;
 }
 
@@ -132,7 +132,7 @@ header.header img:hover{
     min-height: 500px;
     background-size: cover;
     background-position: center;
-    background-image: url('images/bg.jpg');
+    background-image: url('images/background.jpg');
 
 }
 
@@ -197,6 +197,8 @@ header.header img:hover{
     color: white;
     font-weight: 1000;
     margin-top: 50px;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+
 }
 
 /* SECTION 2 */
@@ -496,6 +498,14 @@ header.header img:hover{
 
 /* RESPONSIVE */
 
+@media screen and (min-device-width: 2062px){
+    
+    .slide-pain{
+        margin-left:auto;
+        margin-right: auto;
+    }
+}
+
 @media screen and (max-width:1024px){
     /* menu navigation  */
     .nav li a{
@@ -509,6 +519,11 @@ header.header img:hover{
         border-radius: 14px;
         position: relative;
         text-align: center;
+    }
+
+    /* on desactive le soulignement */
+    .nav-li a::before{
+        display:none;
     }
     /* ajustement de la taille des titres de chaque section du site */
     .classic-title{

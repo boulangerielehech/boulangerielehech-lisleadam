@@ -21,7 +21,7 @@ body{
     /* petits reglages */
     font-family: 'Forum';
     background: linear-gradient(to top right, #000000 1%, #cb2500 87%);
-    height: fit-content;
+    overflow-x: hidden;
 }
 
 /* LOADER */
@@ -378,6 +378,7 @@ body{
     color:white;
     text-align: center;
     margin-top: 150px;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
 
 .test{
@@ -488,6 +489,8 @@ body{
 
     .barre-sep{
         margin-top: 100px;
+        font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+
     }
 
     /* gestion du logo */
@@ -524,6 +527,18 @@ body{
     .main-box{
         width: 800px;
         height: 450px;
+    }
+
+    /* adaptation de la taille des footer */
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 100px;
+        font-weight: 600;
+        font-size: 40px;
+        color:white;
+        margin-bottom: 100px    ;
     }
 
 }   
